@@ -7,7 +7,6 @@ class MessageList extends React.Component{
         super(props);
     }
     componentWillMount(){
-        getMessage()
     }
     render(){
         return <div>

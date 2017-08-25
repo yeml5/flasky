@@ -8,6 +8,7 @@ class PageBar extends React.Component{
     render(){
         return  <div>
             <RaisedButton type="button" onTouchTap={this.pageUp.bind(this)}>PageUp</RaisedButton>
+            <>
             <RaisedButton type="button" onTouchTap={this.pageDown.bind(this)}>PageDown</RaisedButton>
         </div>
     }

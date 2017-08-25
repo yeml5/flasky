@@ -6,7 +6,7 @@ export function getMessage(pageNumber,dispatch,history) {
     return axios.post('api/message', {page:pageNumber})
         .then(function (response) {
             console.log(response);
-            dispatch(messageSuccess(response.));
+            dispatch(messageSuccess(response.data));
         })
         .catch(function (error) {
             console.log(error);
